@@ -1,4 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<div>Hello React!</div>, document.getElementById('app'));
+ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('app'));
