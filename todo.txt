@@ -1,0 +1,7 @@
+
+1. opensource on github.com
+2. simple basic design
+3. alt-react framework
+4. test framework
+5. auto deployment
+6. ----- 

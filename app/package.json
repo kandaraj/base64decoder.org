@@ -1,0 +1,27 @@
+{
+  "name": "base64decoder.org",
+  "version": "1.0.0",
+  "description": "A simple tool for online base64decoder",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "keywords": [
+    "base64decoder",
+    "reactjs",
+    "altjs",
+    "javascript"
+  ],
+  "author": "Siva Kandaraj",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "html-webpack-plugin": "^1.7.0"
+  }
+}
