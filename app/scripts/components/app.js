@@ -3,12 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Input from './input';
 import Result from './result';
-
+import DecodeActions from '../actions/decode-actions'
+import DecodeStore from '../stores/decode-store';
+import AltContainer from 'alt-container';
 
 class App extends React.Component {
 
 	inputChanged(evt){
-		console.log(evt.target.value);
+		DecodeActions.decode(evt.target.value);
 	}
 
 	render(){
@@ -16,7 +18,9 @@ class App extends React.Component {
 			<div>
 				<h3>Decoding a string</h3>
 				<Input inputChanged={this.inputChanged}/>
-				<Result />
+				<AltContainer store={DecodeStore}>
+					<Result />
+				</AltContainer>
 			</div>
 		);
 	}

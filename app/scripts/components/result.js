@@ -7,9 +7,15 @@ import Input from './input';
 class Result extends React.Component {
 
 	render(){
+
+		let resultTitle;
+		if(this.props.result != null) {
+			resultTitle = <h4>Decoded result:</h4>;
+		}
+
 		return(
 			<div>
-				<h4>Results</h4>
+				{resultTitle}
 				{this.props.result}
 			</div>
 		);
