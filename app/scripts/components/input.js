@@ -6,7 +6,7 @@ class Input extends React.Component {
 
 	render(){
 		return(
-			<input onChange={this.props.inputChanged}/>
+			<textarea rows="5" cols="40" onChange={this.props.inputChanged}/>
 		);
 	}
 
