@@ -16,7 +16,7 @@ class Result extends React.Component {
 
 		return(
 			<div className="row">
-				<div className="col-xs-12 col-md-6 col-lg-3">
+				<div className="col-xs-12 col-md-12 col-lg-12">
 					{resultTitle}
 					<div className="wordwrap">
 						{this.props.result}

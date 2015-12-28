@@ -37,3 +37,7 @@ body {
    white-space: -o-pre-wrap;   /* Opera 7 */    
    word-wrap: break-word;      /* IE */
 }
+textarea{
+  width: 90%;
+  height: 150px;
+} 

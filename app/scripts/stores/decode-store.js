@@ -8,9 +8,15 @@ class DecodeStore {
 	}
 
 	decode(value){
-		let result = window.btoa(value);
+		let result;
+		try{
+			result = window.atob(value);
+		}catch(e){
+			result = 'Error decoding the input.';
+		}
+
 		if(result.length > 0){
-			this.setState( {result: window.btoa(value) } );
+			this.setState( {result: result } );
 		}else{
 			this.setState( {result: null } );
 		}

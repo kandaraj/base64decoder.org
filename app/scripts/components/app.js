@@ -20,7 +20,7 @@ class App extends React.Component {
 		      <div className="page-header">
 		        <h1>Base64 Decoder</h1>
 		      </div>
-		      <p className="lead">Enter or paste the text you want to decode.</p>
+		      <p className="lead">Enter or paste the encoded text you want to decode.</p>
 		      <p>
 		      	<Input inputChanged={this.inputChanged}/>	
 		      </p>
