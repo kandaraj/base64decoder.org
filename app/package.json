@@ -4,7 +4,7 @@
   "description": "A simple tool for online base64decoder",
   "main": "scripts/index.js",
   "scripts": {
-    "test": "karma start"
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
   },
   "keywords": [
     "base64decoder",
@@ -29,7 +29,15 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^1.7.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.16",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.2",
+    "karma-webpack": "^1.7.0",
+    "react-addons-test-utils": "^0.14.3",
     "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9"
   }
 }
