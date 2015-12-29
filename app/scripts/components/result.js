@@ -18,14 +18,13 @@ class Result extends React.Component {
 			<div className="row">
 				<div className="col-xs-12 col-md-12 col-lg-12">
 					{resultTitle}
-					<div className="wordwrap">
+					<div className="wordwrap result">
 						{this.props.result}
 					</div>
 				</div>
 			</div>
 		);
 	}
-
 }
 
 export default Result;
