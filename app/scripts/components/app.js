@@ -1,19 +1,21 @@
- 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Input from './input';
 import Result from './result';
-import DecodeActions from '../actions/decode-actions'
-import DecodeStore from '../stores/decode-store';
-import AltContainer from 'alt-container';
+
 
 class App extends React.Component {
 
+  constructor(props,context){
+    super(props,context);
+  }
+
 	inputChanged(evt){
-		DecodeActions.decode(evt.target.value);
+	 this.props.decoder(evt.target.value);
 	}
 
 	render(){
+
 		return(
 			<div>
 		    <div className="container">
@@ -22,11 +24,11 @@ class App extends React.Component {
 		      </div>
 		      <p className="lead">Enter or paste the encoded text you want to decode.</p>
 		      <p>
-		      	<Input inputChanged={this.inputChanged}/>	
+		      	<Input inputChanged={this.inputChanged.bind(this)}/>
 		      </p>
-		      <AltContainer store={DecodeStore}>
-						<Result />
-					</AltContainer>
+
+						<Result result={this.props.result} />
+
 		    </div>
 
 		    <footer className="footer">
@@ -34,8 +36,8 @@ class App extends React.Component {
 		        <p className="text-muted">&copy; base64decoder.org</p>
 		      </div>
 		    </footer>
-		  </div>   
-			 
+		  </div>
+
 		);
 	}
 

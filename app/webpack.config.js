@@ -11,7 +11,8 @@ module.exports = {
 	},
 	output: {
 		path: '../__build__/',
-		filename: 'scripts/bundle.js'
+		filename: 'scripts/bundle.js',
+		publicPath: 'http://localhost:8080/'
 	},
 	module:{
 		loaders:[

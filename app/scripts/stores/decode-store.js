@@ -24,5 +24,3 @@ class DecodeStore {
 }
 
 export default alt.createStore(DecodeStore, 'DecodeStore');
-
-

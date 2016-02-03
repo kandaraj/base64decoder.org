@@ -20,7 +20,9 @@
     "alt-react": "0.0.1",
     "bootstrap": "^3.3.6",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.2.1",
+    "redux": "^3.2.1"
   },
   "devDependencies": {
     "babel-loader": "^6.2.0",
